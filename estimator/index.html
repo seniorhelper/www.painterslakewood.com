@@ -1,1 +1,82 @@
-<!doctype html><html lang="en-US"><head><meta charset="utf-8"><title>This page has moved | Painters Lakewood</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="canonical" href="https://painterslakewood.com/estimate/"><meta http-equiv="refresh" content="0; url=/estimate/"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><style>body{font:18px/1.6 system-ui,sans-serif;background:#fff;color:#1f2a33;margin:0;padding:48px 20px}main{max-width:56ch;margin:0 auto}a{color:#1f5a43}</style></head><body><main><h1>This page has moved</h1><p>This page now lives at <a href="/estimate/">painterslakewood.com/estimate/</a>.</p><p>Questions? Call <a href="tel:+17202085645">720-208-5645</a>.</p></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estimator and proposal builder | Painters Lakewood</title>
+<meta name="description" content="Internal field estimating and proposal tool for the sales team.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://painterslakewood.com/estimator/">
+<meta name="theme-color" content="#ffffff">
+<link rel="manifest" href="/estimator/manifest.webmanifest">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/estimator/estimator.css?v=2.0.0">
+<style>:root{--brand:#1f5a43;--brand-ink:#1f5a43;--accent:#c2552b;--accent-ink:#9c3f1c;--paper:#f3f7f4;--brand-wash:#edf5f0;--accent-wash:#fbefe9;--brand-soft:#b5cec2;--ink:#14202e;--muted:#56616f;--line:#d9dfe7;--focus:#f2b705;--focus-soft:rgba(242,183,5,.35);--fd:'Young Serif',Georgia,serif;--fu:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPS87WPV3L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZPS87WPV3L');</script>
+</head>
+<body data-h1="Zm9ybQ==" data-h2="c3VibWl0LmNv" data-u1="aW4=" data-u2="Zm8=" data-d1="ZXlldG9hZA==" data-d2="LmNvbQ==">
+<a class="skip" href="#app">Skip to the estimator</a>
+<header class="top"><div class="wrap"><img class="logo" src="/estimator/logo.png" alt="Painters Lakewood" width="560" height="97"><div class="top-r"><span class="tag">Internal field tool</span><a href="tel:+17202085645">720-208-5645</a></div></div></header>
+<div class="tool"><div class="wrap"><div class="est-id"><b id="est-name">Loading...</b><small><span id="est-saved">Not saved yet</span> · <span id="net" class="net on">Online</span> · <span id="offline">Offline mode loading</span></small><small id="pb"></small></div>
+<div class="btns"><button type="button" class="btn btn-line sm" id="b-new">New</button><button type="button" class="btn btn-line sm" id="b-drafts">Drafts</button><button type="button" class="btn btn-line sm" id="b-mgr" aria-pressed="false">Manager</button></div></div></div>
+<nav class="steps" aria-label="Estimate steps"><div class="wrap">
+<button type="button" data-go="1" aria-current="step">1 Customer<span>home + job</span></button><button type="button" data-go="2">2 Areas<span>rooms, exterior</span></button><button type="button" data-go="3">3 Options<span>good/better/best</span></button><button type="button" data-go="4">4 Sign<span>proposal</span></button>
+</div></nav>
+<main id="app" aria-busy="true"><div class="wrap">
+<h1 class="sr">Estimator and proposal builder</h1>
+<section class="step" id="step1" aria-label="Customer and home"></section>
+<section class="step" id="step2" aria-label="Areas" hidden><h2>Rooms, cabinets and exterior</h2><div id="areas"></div>
+<div class="add-row"><div class="fld"><label for="preset-room">Interior room</label><select id="preset-room"></select></div><button type="button" class="btn btn-main" data-add="room">+ Add room</button></div>
+<div class="add-row"><div class="fld"><label for="preset-cabinets">Cabinets</label><select id="preset-cabinets"></select></div><button type="button" class="btn btn-main" data-add="cabinets">+ Add cabinets</button></div>
+<div class="add-row"><div class="fld"><label for="preset-exterior">Exterior</label><select id="preset-exterior"></select></div><button type="button" class="btn btn-main" data-add="exterior">+ Add exterior</button></div>
+<div class="add-row"><button type="button" class="btn btn-line" data-add="deck">+ Add deck</button><button type="button" class="btn btn-line" data-add="fence">+ Add fence</button></div>
+</section>
+<section class="step" id="step3" aria-label="Options" hidden></section>
+<section class="step" id="step4" aria-label="Proposal and signature" hidden></section>
+<details class="playbook" id="playbook"><summary>Sales playbook (internal, never shown to the customer)</summary>
+  <p class="hint">Open this on your phone while you walk the property. The sequence matters more than the words.</p>
+  <ol>
+    <li><div><h3>Build the picture before the price</h3><p>Walk every elevation or room with them. Point at what you see and name it out loud: the chalking on the south wall, the open caulk at the sills, the bare wood under the peel. People buy preparation once they can see why it is needed.</p></div></li>
+    <li><div><h3>Pre-trial close</h3><p>"We're slower than we'd like this time of year. If I can put together an incredible price today and get all of this done the way you want it, are you open to moving forward today if we come to an agreement?" Then stop talking and listen to the answer. A soft yes here is permission to present real numbers. A no tells you what still needs solving.</p></div></li>
+    <li><div><h3>Anchor with the options</h3><p>Show all three options side by side and walk them from Best down: "This is everything we can do, this is what most people choose, and this is the solid repaint." Let them pick. Never invent a competitor's quote; the three columns are the anchor.</p></div></li>
+    <li><div><h3>Name the price once, then be quiet</h3><p>"I can do all of this for $X." Say it, then stop. The silence belongs to them. Whoever speaks first usually concedes something.</p></div></li>
+    <li><div><h3>Option close instead of yes or no</h3><p>"I can get you on the schedule Wednesday or Thursday. Which works better?" A choice between two yeses beats a question that invites no.</p></div></li>
+    <li><div><h3>Ask for the authorization plainly</h3><p>"I just need a quick authorization and the deposit to hold those dates." Hand them the phone or tablet with the signature pad open. No ceremony, no apology.</p></div></li>
+    <li><div><h3>Final trial close</h3><p>"If I can do all this at the quality you want and it fits your budget, are you ready to move forward today?" If the answer is anything but yes, the next question is simply: "What would need to be different?"</p></div></li>
+  </ol>
+  <h3>Objections, handled without arguing</h3>
+  <div class="tblw"><table>
+    <thead><tr><th scope="col">What they say</th><th scope="col">What it usually means</th><th scope="col">What to say</th></tr></thead>
+    <tbody>
+      <tr><td>"That's more than I expected."</td><td>No frame of reference, or a real budget ceiling</td><td>"Fair. Is it the total, or the timing of the total? Because we can phase this by elevation and do the sun-facing walls now."</td></tr>
+      <tr><td>"I need to think about it."</td><td>Something specific is unresolved</td><td>"Of course. Which part: price, timing, the crew, or whether this is the right scope? I'd rather answer it now than have you guess later."</td></tr>
+      <tr><td>"I have to talk to my spouse."</td><td>Legitimate, or a soft exit</td><td>"Makes sense. What do you think they'll ask about first? Let's get that answered so you're not relaying it secondhand."</td></tr>
+      <tr><td>"I'm getting other bids."</td><td>They want a benchmark</td><td>"Smart. Compare the prep line, the product line, coat counts and the warranty. If another bid is lower, it is almost always one of those four, and I'll show you where."</td></tr>
+      <tr><td>"Can you do better on price?"</td><td>Testing, or genuinely short</td><td>"The discount is already in this number. What I can move is scope or schedule. Which matters more to you?"</td></tr>
+      <tr><td>"The last painter ruined it."</td><td>Trust, not money</td><td>"That's most of what we fix. Let me show you exactly why it failed, and what we do differently right here on your wall."</td></tr>
+      <tr><td>"Just email it to me."</td><td>Avoiding the close politely</td><td>"Already doing that. Before I go, what's the one thing that would make this an easy yes?"</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Rules of the road</h3>
+  <ul>
+    <li><strong>No invented urgency.</strong> No fake countdowns, no "one spot left." The winter booking offer is real and ends December 31, 2026, which is all the urgency you need. Say it plainly: 25% off labor, paint and materials not included.</li>
+    <li><strong>No competitor names.</strong> Anchoring uses our own Good, Better and Best options, never a story about another company.</li>
+    <li><strong>No guarantees we cannot keep.</strong> Warranty terms as written, nothing more.</li>
+    <li><strong>Write down what you promise.</strong> If you say it on the driveway, it belongs in the notes field of that elevation.</li>
+    <li><strong>Leave on good terms either way.</strong> A no today is a call next spring if you handle it well.</li>
+  </ul>
+</details>
+</div></main>
+<div class="bar" role="region" aria-label="Running total"><div class="wrap"><div class="bar-t" aria-live="polite"><small><span id="bar-tier">Better</span> option<span id="bar-mgr" class="bar-mgr"></span></small><b id="bar-total">$0</b><s id="bar-was" hidden></s></div><button type="button" class="btn btn-main" id="bar-next">Next</button></div></div>
+<dialog id="pin-dlg" aria-labelledby="pin-h"><form id="pin-form"><h2 id="pin-h">Manager view</h2><p class="hint">Shows cost, gross margin and floor price for each option.</p><div class="fld"><label for="pin">PIN</label><input id="pin" type="password" inputmode="numeric" autocomplete="off"></div><p class="msg warn" id="pin-msg"></p><div class="row"><button class="btn btn-main" type="submit">Unlock</button><button class="btn btn-line" type="button" data-close>Cancel</button></div></form></dialog>
+<dialog id="drafts-dlg" aria-labelledby="dr-h"><h2 id="dr-h">Saved estimates on this device</h2><ul class="dlist" id="drafts-list"></ul><div class="row"><button class="btn btn-line" type="button" data-close>Close</button></div></dialog>
+<footer class="foot"><p>Painters Lakewood internal estimator · not indexed · drafts stay on this device</p><div class="heart-line"><svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-10-9.3C.3 8.4 2.1 4.5 5.9 4.1 8.2 3.9 10.2 5.2 12 7.3c1.8-2.1 3.8-3.4 6.1-3.2 3.8.4 5.6 4.3 3.9 7.6C19.5 16.4 12 21 12 21z"/></svg><a href="https://eyetoad.com/">Need a website?</a></div></footer>
+<script type="application/json" id="est-brand">{"name": "Painters Lakewood", "site": "painterslakewood.com", "phone": "720-208-5645", "tel": "+17202085645", "legal": "Search Converts LLC, a Colorado limited liability company, doing business as Painter Hotline", "pricesUrl": "https://painterhotline.com/estimator/prices.json", "pricesFallback": "/estimator/prices.json", "logoPdf": "/estimator/logo-pdf.jpg", "pdfLib": "/estimator/vendor/pdf-lib.min.js", "pdfColor": "#1f5a43", "defaultZone": "metro"}</script>
+<script src="/estimator/engine.js?v=2.0.0"></script>
+<script src="/estimator/proposal.js?v=2.0.0"></script>
+<script src="/estimator/app.js?v=2.0.0"></script>
+</body>
+</html>

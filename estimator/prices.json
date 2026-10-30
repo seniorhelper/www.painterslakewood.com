@@ -1,0 +1,1110 @@
+{
+ "version": "1.0 (Nov 2026)",
+ "updated": "2026-10-30",
+ "readme": "Edit numbers only, then save. price = sell price per unit [Base, Signature]; hrs = productive labor hours per unit; mat = material cost per unit [Base, Signature]. One-number lists apply to every option. Source: painter-hotline-pricing-model-v1.0.xlsx.",
+ "minimums": {
+  "interior": 870,
+  "exterior": 1250
+ },
+ "geometry": {
+  "doorOpeningSqft": 21,
+  "windowOpeningSqft": 15,
+  "doorWidthFt": 3,
+  "storyHeightFt": 10,
+  "highCeilingFt": 10
+ },
+ "rules": {
+  "leadSafeBeforeYear": 1978,
+  "asbestosTriggerSqft": 32,
+  "asbestosExemptYear": 1989
+ },
+ "tiers": {
+  "good": {
+   "label": "Good",
+   "name": "Premium",
+   "priceIndex": 0,
+   "extraLabor": 0,
+   "summary": "Two coats of a premium line, standard prep. A clean, durable repaint.",
+   "products": "Sherwin-Williams Duration or SuperPaint, Benjamin Moore Regal Select, Behr Ultra Scuff Defense or Valspar Signature. Cabinets: urethane-alkyd enamel."
+  },
+  "better": {
+   "label": "Better",
+   "name": "Signature",
+   "priceIndex": 1,
+   "extraLabor": 0,
+   "summary": "Top-of-line coatings with better hide, washability and color hold. Our most chosen option.",
+   "products": "Sherwin-Williams Emerald or Benjamin Moore Aura. Cabinets: pre-catalyzed / 2K finish."
+  },
+  "best": {
+   "label": "Best",
+   "name": "Signature Plus",
+   "priceIndex": 1,
+   "extraLabor": 0.15,
+   "summary": "Signature coatings plus extended prep: full spot-priming, detail caulking and sanding between coats.",
+   "products": "Sherwin-Williams Emerald or Benjamin Moore Aura, with extended prep on every surface. Cabinets: pre-catalyzed / 2K finish."
+  }
+ },
+ "items": {
+  "flat_small_bedroom": {
+   "label": "Small bedroom or office: walls, ceiling, baseboards",
+   "unit": "room",
+   "hrs": 7.541,
+   "price": [
+    935,
+    1025
+   ],
+   "mat": [
+    139.58,
+    186.12
+   ],
+   "flatroom": true,
+   "wallSqft": 288
+  },
+  "flat_medium_bedroom": {
+   "label": "Medium bedroom: walls, ceiling, baseboards",
+   "unit": "room",
+   "hrs": 9.3423,
+   "price": [
+    1150,
+    1275
+   ],
+   "mat": [
+    175.21,
+    234.41
+   ],
+   "flatroom": true,
+   "wallSqft": 352
+  },
+  "flat_large_bedroom": {
+   "label": "Large or primary bedroom: walls, ceiling, baseboards",
+   "unit": "room",
+   "hrs": 12.8346,
+   "price": [
+    1600,
+    1775
+   ],
+   "mat": [
+    246.21,
+    330.81
+   ],
+   "flatroom": true,
+   "wallSqft": 504
+  },
+  "flat_living_room": {
+   "label": "Living or family room: walls, ceiling, baseboards",
+   "unit": "room",
+   "hrs": 15.7885,
+   "price": [
+    1975,
+    2175
+   ],
+   "mat": [
+    304.9,
+    410.41
+   ],
+   "flatroom": true,
+   "wallSqft": 612
+  },
+  "flat_kitchen": {
+   "label": "Kitchen walls and ceiling",
+   "unit": "room",
+   "hrs": 9.1085,
+   "price": [
+    1075,
+    1150
+   ],
+   "mat": [
+    137.78,
+    184.54
+   ],
+   "flatroom": true,
+   "wallSqft": 300
+  },
+  "flat_full_bath": {
+   "label": "Full bathroom: walls, ceiling, baseboards, moisture-resistant finish",
+   "unit": "room",
+   "hrs": 6.6105,
+   "price": [
+    755,
+    815
+   ],
+   "mat": [
+    90.5,
+    120.01
+   ],
+   "flatroom": true,
+   "wallSqft": 240
+  },
+  "flat_half_bath": {
+   "label": "Powder room: walls, ceiling, baseboards",
+   "unit": "room",
+   "hrs": 5.0153,
+   "price": [
+    570,
+    610
+   ],
+   "mat": [
+    65.21,
+    85.66
+   ],
+   "flatroom": true,
+   "wallSqft": 160
+  },
+  "flat_hallway": {
+   "label": "Hallway section (per 10 LF): both walls, ceiling, base",
+   "unit": "room",
+   "hrs": 4.1244,
+   "price": [
+    495,
+    535
+   ],
+   "mat": [
+    67.68,
+    88.67
+   ],
+   "flatroom": true,
+   "wallSqft": 160
+  },
+  "flat_stairwell": {
+   "label": "Stairwell: walls to 18 ft, ceiling, stringers, staging",
+   "unit": "stairwell",
+   "hrs": 15.5558,
+   "price": [
+    1750,
+    1850
+   ],
+   "mat": [
+    192.77,
+    252.71
+   ],
+   "flatroom": true,
+   "wallSqft": 400
+  },
+  "int_walls": {
+   "label": "Walls, 2 coats",
+   "unit": "sq ft",
+   "hrs": 0.0154,
+   "price": [
+    2.05,
+    2.25
+   ],
+   "mat": [
+    0.35,
+    0.47
+   ]
+  },
+  "int_ceiling": {
+   "label": "Ceiling, 2 coats",
+   "unit": "sq ft",
+   "hrs": 0.0125,
+   "price": [
+    1.6,
+    1.8
+   ],
+   "mat": [
+    0.27,
+    0.36
+   ]
+  },
+  "int_ceiling_high": {
+   "label": "Ceiling, vaulted or over 10 ft, 2 coats",
+   "unit": "sq ft",
+   "hrs": 0.02,
+   "price": [
+    2.3,
+    2.45
+   ],
+   "mat": [
+    0.27,
+    0.36
+   ]
+  },
+  "popcorn_paint": {
+   "label": "Textured/popcorn ceiling, paint only (sprayed)",
+   "unit": "sq ft",
+   "hrs": 0.0167,
+   "price": [
+    2.35,
+    2.7
+   ],
+   "mat": [
+    0.46,
+    0.63
+   ]
+  },
+  "popcorn_removal": {
+   "label": "Popcorn removal, retexture, prime and paint (after negative asbestos test)",
+   "unit": "sq ft",
+   "hrs": 0.0556,
+   "price": [
+    5.5
+   ],
+   "mat": [
+    0.35
+   ]
+  },
+  "int_baseboard": {
+   "label": "Baseboards, 2 coats, caulk and fill",
+   "unit": "LF",
+   "hrs": 0.0333,
+   "price": [
+    3.35,
+    3.45
+   ],
+   "mat": [
+    0.22,
+    0.26
+   ]
+  },
+  "int_casing_lf": {
+   "label": "Door and window casing",
+   "unit": "LF",
+   "hrs": 0.0333,
+   "price": [
+    3.35,
+    3.45
+   ],
+   "mat": [
+    0.22,
+    0.26
+   ]
+  },
+  "int_crown": {
+   "label": "Crown molding",
+   "unit": "LF",
+   "hrs": 0.0556,
+   "price": [
+    5.5,
+    5.5
+   ],
+   "mat": [
+    0.22,
+    0.26
+   ]
+  },
+  "int_chair_rail": {
+   "label": "Chair rail / wainscot cap",
+   "unit": "LF",
+   "hrs": 0.0333,
+   "price": [
+    3.35,
+    3.45
+   ],
+   "mat": [
+    0.22,
+    0.26
+   ]
+  },
+  "int_window": {
+   "label": "Window sash, frame and sill",
+   "unit": "window",
+   "hrs": 0.6,
+   "price": [
+    60,
+    60
+   ],
+   "mat": [
+    3.5,
+    4.5
+   ]
+  },
+  "int_door_flat": {
+   "label": "Flat door, both sides and edges",
+   "unit": "door",
+   "hrs": 0.85,
+   "price": [
+    90,
+    95
+   ],
+   "mat": [
+    8.44,
+    11.2
+   ]
+  },
+  "int_door_panel": {
+   "label": "Panel door, both sides and edges",
+   "unit": "door",
+   "hrs": 1.25,
+   "price": [
+    125,
+    130
+   ],
+   "mat": [
+    8.44,
+    11.2
+   ]
+  },
+  "int_door_frame": {
+   "label": "Door jamb and casing",
+   "unit": "side",
+   "hrs": 0.4,
+   "price": [
+    40,
+    45
+   ],
+   "mat": [
+    3,
+    4
+   ]
+  },
+  "int_door_french": {
+   "label": "French / multi-lite door",
+   "unit": "side",
+   "hrs": 1,
+   "price": [
+    95,
+    100
+   ],
+   "mat": [
+    4,
+    5.5
+   ]
+  },
+  "int_closet": {
+   "label": "Reach-in closet: walls, shelf, ceiling",
+   "unit": "each",
+   "hrs": 1.5,
+   "price": [
+    155,
+    160
+   ],
+   "mat": [
+    12,
+    15
+   ]
+  },
+  "int_closet_walkin": {
+   "label": "Walk-in closet",
+   "unit": "each",
+   "hrs": 3,
+   "price": [
+    305,
+    320
+   ],
+   "mat": [
+    22,
+    28
+   ]
+  },
+  "int_accent": {
+   "label": "Accent wall in a separate color",
+   "unit": "each",
+   "hrs": 2.5,
+   "price": [
+    280,
+    295
+   ],
+   "mat": [
+    30,
+    38
+   ]
+  },
+  "int_color_change": {
+   "label": "Extra coat for color change",
+   "unit": "sq ft",
+   "hrs": 0.0067,
+   "price": [
+    0.9,
+    1.05
+   ],
+   "mat": [
+    0.16,
+    0.23
+   ]
+  },
+  "int_stain_block": {
+   "label": "Stain-blocking primer coat",
+   "unit": "sq ft",
+   "hrs": 0.0067,
+   "price": [
+    0.85
+   ],
+   "mat": [
+    0.14
+   ]
+  },
+  "wallpaper_removal": {
+   "label": "Wallpaper removal: strip, wash adhesive, seal",
+   "unit": "sq ft",
+   "hrs": 0.0286,
+   "price": [
+    2.65
+   ],
+   "mat": [
+    0.08
+   ]
+  },
+  "skim_coat": {
+   "label": "Skim coat",
+   "unit": "sq ft",
+   "hrs": 0.0286,
+   "price": [
+    2.8
+   ],
+   "mat": [
+    0.15
+   ]
+  },
+  "drywall_small_first": {
+   "label": "Drywall patch up to 4 in. (first)",
+   "unit": "each",
+   "hrs": 1,
+   "price": [
+    100
+   ],
+   "mat": [
+    5
+   ]
+  },
+  "drywall_small_add": {
+   "label": "Drywall patch up to 4 in. (additional)",
+   "unit": "each",
+   "hrs": 0.35,
+   "price": [
+    35
+   ],
+   "mat": [
+    2
+   ]
+  },
+  "drywall_small": {
+   "label": "Drywall patch up to 4 in.",
+   "unit": "each",
+   "hrs": 0.35,
+   "price": [
+    35
+   ],
+   "mat": [
+    2
+   ]
+  },
+  "drywall_medium": {
+   "label": "Drywall repair 4 to 12 in., mesh patch",
+   "unit": "each",
+   "hrs": 2.5,
+   "price": [
+    250
+   ],
+   "mat": [
+    15
+   ]
+  },
+  "drywall_large": {
+   "label": "Drywall repair 12 in. to 2x2 ft, new board",
+   "unit": "each",
+   "hrs": 4,
+   "price": [
+    420
+   ],
+   "mat": [
+    35
+   ]
+  },
+  "texture_match": {
+   "label": "Texture match (orange peel / knockdown)",
+   "unit": "each",
+   "hrs": 1.25,
+   "price": [
+    130
+   ],
+   "mat": [
+    10
+   ]
+  },
+  "furniture_move": {
+   "label": "Full furniture move-out and reset",
+   "unit": "room",
+   "hrs": 1,
+   "price": [
+    95
+   ],
+   "mat": [
+    4
+   ]
+  },
+  "cab_door": {
+   "label": "Cabinet door, both sides, sprayed",
+   "unit": "door",
+   "hrs": 1.75,
+   "price": [
+    175,
+    195
+   ],
+   "mat": [
+    12,
+    22
+   ]
+  },
+  "cab_drawer": {
+   "label": "Drawer front, sprayed",
+   "unit": "drawer",
+   "hrs": 1.1,
+   "price": [
+    110,
+    120
+   ],
+   "mat": [
+    7,
+    13
+   ]
+  },
+  "cab_box_lf": {
+   "label": "Cabinet boxes, face frames and end panels, in place",
+   "unit": "LF",
+   "hrs": 0.75,
+   "price": [
+    75,
+    80
+   ],
+   "mat": [
+    5,
+    8
+   ]
+  },
+  "cab_island": {
+   "label": "Kitchen island: boxes, panels, toe kick",
+   "unit": "each",
+   "hrs": 7,
+   "price": [
+    665,
+    695
+   ],
+   "mat": [
+    25,
+    40
+   ]
+  },
+  "cab_interior": {
+   "label": "Cabinet interior",
+   "unit": "box",
+   "hrs": 1.1,
+   "price": [
+    105,
+    110
+   ],
+   "mat": [
+    5,
+    7
+   ]
+  },
+  "cab_hardware_install": {
+   "label": "Install new hardware (customer supplied)",
+   "unit": "piece",
+   "hrs": 0.15,
+   "price": [
+    14
+   ],
+   "mat": [
+    0.5
+   ],
+   "noTierExtra": true
+  },
+  "cab_hardware_fill": {
+   "label": "Fill old hardware holes",
+   "unit": "piece",
+   "hrs": 0.17,
+   "price": [
+    16
+   ],
+   "mat": [
+    0.5
+   ],
+   "noTierExtra": true
+  },
+  "cab_clear_refinish": {
+   "label": "Clean, scuff and clear-coat (keep wood look)",
+   "unit": "piece",
+   "hrs": 0.85,
+   "price": [
+    85
+   ],
+   "mat": [
+    6
+   ]
+  },
+  "ext_body_lap": {
+   "label": "Siding, 2 coats",
+   "unit": "sq ft",
+   "hrs": 0.01,
+   "price": [
+    1.75,
+    2.05
+   ],
+   "mat": [
+    0.45,
+    0.6
+   ],
+   "ext": true
+  },
+  "ext_body_stucco": {
+   "label": "Stucco, 2 coats with crack fill",
+   "unit": "sq ft",
+   "hrs": 0.0125,
+   "price": [
+    2.5,
+    3
+   ],
+   "mat": [
+    0.71,
+    0.97
+   ],
+   "ext": true
+  },
+  "ext_body_brick": {
+   "label": "Brick / masonry: masonry primer + 2 coats",
+   "unit": "sq ft",
+   "hrs": 0.0154,
+   "price": [
+    2.95,
+    3.4
+   ],
+   "mat": [
+    0.83,
+    1.06
+   ],
+   "ext": true
+  },
+  "ext_body_stain": {
+   "label": "Cedar / log stain, 2 coats, back-brushed",
+   "unit": "sq ft",
+   "hrs": 0.0143,
+   "price": [
+    2.4,
+    2.85
+   ],
+   "mat": [
+    0.58,
+    0.83
+   ],
+   "ext": true
+  },
+  "ext_fascia": {
+   "label": "Fascia and rake boards",
+   "unit": "LF",
+   "hrs": 0.0333,
+   "price": [
+    3.3,
+    3.45
+   ],
+   "mat": [
+    0.2,
+    0.27
+   ],
+   "ext": true
+  },
+  "ext_soffit": {
+   "label": "Soffit (up to 24 in. deep)",
+   "unit": "LF",
+   "hrs": 0.0455,
+   "price": [
+    4.6,
+    4.8
+   ],
+   "mat": [
+    0.3,
+    0.4
+   ],
+   "ext": true
+  },
+  "ext_gutter": {
+   "label": "Gutters and downspouts",
+   "unit": "LF",
+   "hrs": 0.0333,
+   "price": [
+    3.3,
+    3.4
+   ],
+   "mat": [
+    0.18,
+    0.25
+   ],
+   "ext": true
+  },
+  "ext_window": {
+   "label": "Exterior window frame and trim",
+   "unit": "window",
+   "hrs": 0.5,
+   "price": [
+    50,
+    55
+   ],
+   "mat": [
+    4,
+    5.5
+   ],
+   "ext": true
+  },
+  "ext_shutters": {
+   "label": "Shutters",
+   "unit": "pair",
+   "hrs": 1,
+   "price": [
+    100,
+    105
+   ],
+   "mat": [
+    6,
+    8
+   ],
+   "ext": true
+  },
+  "ext_door": {
+   "label": "Entry door: exterior face, edges, frame",
+   "unit": "each",
+   "hrs": 1.75,
+   "price": [
+    185,
+    195
+   ],
+   "mat": [
+    15,
+    20
+   ],
+   "ext": true
+  },
+  "ext_garage_1": {
+   "label": "Garage door, 1-car",
+   "unit": "each",
+   "hrs": 2.25,
+   "price": [
+    235,
+    245
+   ],
+   "mat": [
+    18,
+    25
+   ],
+   "ext": true
+  },
+  "ext_garage_2": {
+   "label": "Garage door, 2-car",
+   "unit": "each",
+   "hrs": 3.5,
+   "price": [
+    365,
+    390
+   ],
+   "mat": [
+    30,
+    42
+   ],
+   "ext": true
+  },
+  "ext_caulk": {
+   "label": "Premium elastomeric caulking, gaps and joints",
+   "unit": "LF",
+   "hrs": 0.025,
+   "price": [
+    2.7
+   ],
+   "mat": [
+    0.25
+   ],
+   "ext": true
+  },
+  "deck_floor": {
+   "label": "Deck floor: clean, brighten, 2 coats stain",
+   "unit": "sq ft",
+   "hrs": 0.0222,
+   "price": [
+    3.1,
+    3.55
+   ],
+   "mat": [
+    0.58,
+    0.83
+   ],
+   "ext": true
+  },
+  "deck_railing": {
+   "label": "Deck railing: balusters, posts, cap",
+   "unit": "LF",
+   "hrs": 0.125,
+   "price": [
+    12,
+    12
+   ],
+   "mat": [
+    0.4,
+    0.55
+   ],
+   "ext": true
+  },
+  "deck_stairs": {
+   "label": "Deck stairs",
+   "unit": "step",
+   "hrs": 0.5,
+   "price": [
+    50,
+    50
+   ],
+   "mat": [
+    2,
+    2.8
+   ],
+   "ext": true
+  },
+  "fence_privacy": {
+   "label": "Fence stain, 6 ft privacy",
+   "unit": "LF",
+   "hrs": 0.0556,
+   "price": [
+    9,
+    10.5
+   ],
+   "mat": [
+    2.1,
+    3
+   ],
+   "ext": true
+  },
+  "fence_picket": {
+   "label": "Fence stain, picket / split rail",
+   "unit": "LF",
+   "hrs": 0.0357,
+   "price": [
+    5,
+    6
+   ],
+   "mat": [
+    1,
+    1.4
+   ],
+   "ext": true
+  },
+  "lead_safe_area": {
+   "label": "Lead-safe RRP work practices (interior work area)",
+   "unit": "area",
+   "hrs": 3,
+   "price": [
+    380
+   ],
+   "mat": [
+    60
+   ]
+  },
+  "painter_hr": {
+   "label": "Painter labor, time and materials",
+   "unit": "hour",
+   "hrs": 1,
+   "price": [
+    90
+   ],
+   "mat": [
+    0
+   ],
+   "noTierExtra": true
+  },
+  "carpentry_hr": {
+   "label": "Carpentry repair: wood rot, trim replacement",
+   "unit": "hour",
+   "hrs": 1.18,
+   "price": [
+    105
+   ],
+   "mat": [
+    0
+   ],
+   "noTierExtra": true
+  },
+  "color_consult": {
+   "label": "Color consultation",
+   "unit": "each",
+   "hrs": 1.5,
+   "price": [
+    195
+   ],
+   "mat": [
+    0
+   ],
+   "noTierExtra": true
+  }
+ },
+ "conditions": {
+  "prep": {
+   "light": 0.92,
+   "standard": 1,
+   "moderate": 1.15,
+   "heavy": 1.35
+  },
+  "prepLabels": {
+   "light": "Light (clean, sound surfaces)",
+   "standard": "Standard",
+   "moderate": "Moderate (scraping, patching, spot prime)",
+   "heavy": "Heavy (failing paint, full scrape/sand, prime)"
+  },
+  "highWalls": 1.25,
+  "stairwell": 1.5,
+  "furniture": {
+   "light": 1,
+   "heavy": 1.1
+  },
+  "furnitureLabels": {
+   "light": "Empty or light furniture (included)",
+   "heavy": "Occupied, heavy furniture to work around"
+  },
+  "colorChangeOther": {
+   "labor": 1.3,
+   "mat": 1.5
+  },
+  "stories": {
+   "1": {
+    "price": 1,
+    "hrs": 1
+   },
+   "2": {
+    "price": 1.2,
+    "hrs": 1.25
+   },
+   "3": {
+    "price": 1.4,
+    "hrs": 1.5
+   }
+  }
+ },
+ "siding": {
+  "lap_wood": {
+   "label": "Lap wood siding",
+   "item": "ext_body_lap"
+  },
+  "fiber_cement": {
+   "label": "Fiber cement",
+   "item": "ext_body_lap"
+  },
+  "hardboard": {
+   "label": "Hardboard / masonite",
+   "item": "ext_body_lap"
+  },
+  "vinyl": {
+   "label": "Vinyl",
+   "item": "ext_body_lap"
+  },
+  "aluminum": {
+   "label": "Aluminum",
+   "item": "ext_body_lap"
+  },
+  "stucco": {
+   "label": "Stucco",
+   "item": "ext_body_stucco"
+  },
+  "brick": {
+   "label": "Brick / masonry",
+   "item": "ext_body_brick"
+  },
+  "cedar": {
+   "label": "Cedar shake / board (stain)",
+   "item": "ext_body_stain"
+  },
+  "log": {
+   "label": "Log (stain)",
+   "item": "ext_body_stain"
+  }
+ },
+ "zones": {
+  "metro": {
+   "label": "Denver metro core",
+   "pctJob": 0,
+   "pctLabor": 0,
+   "perCrewDay": 0
+  },
+  "outer": {
+   "label": "Outer Front Range / foothills",
+   "pctJob": 0.05,
+   "pctLabor": 0,
+   "perCrewDay": 0
+  },
+  "fortmorgan": {
+   "label": "Fort Morgan / eastern plains",
+   "pctJob": 0,
+   "pctLabor": 0.1,
+   "perCrewDay": 125
+  },
+  "mountain": {
+   "label": "Mountain (Summit County etc.)",
+   "pctJob": 0,
+   "pctLabor": 0.15,
+   "perCrewDay": 175
+  }
+ },
+ "leadSafe": {
+  "label": "Lead-safe work practices (EPA RRP, home built before 1978)",
+  "interiorItem": "lead_safe_area",
+  "exteriorPctLabor": 0.15,
+  "exteriorMin": 750
+ },
+ "surcharges": {
+  "rushPctLabor": 0.15,
+  "afterHoursPctLabor": 0.3,
+  "premiumCostShare": 0.5,
+  "travelCostShare": 0.6,
+  "rushLabel": "Rush start (within 7 days)",
+  "afterHoursLabel": "Evenings / weekends (commercial)"
+ },
+ "promo": {
+  "label": "Winter booking: 25% off labor",
+  "detail": "25% off labor — booked by Dec 31, 2026 (paint/materials not included)",
+  "pctLabor": 0.25,
+  "endsISO": "2026-12-31"
+ },
+ "addons": [
+  {
+   "id": "color_consult",
+   "label": "Color consultation (credited on jobs over $2,500)",
+   "unit": "flat",
+   "item": "color_consult",
+   "creditOverJob": 2500
+  },
+  {
+   "id": "painter_hours",
+   "label": "Extra painter labor (time and materials)",
+   "unit": "hour",
+   "qtyLabel": "hours",
+   "item": "painter_hr"
+  },
+  {
+   "id": "carpentry_hours",
+   "label": "Carpentry repair (wood rot, trim)",
+   "unit": "hour",
+   "qtyLabel": "hours",
+   "item": "carpentry_hr"
+  }
+ ],
+ "payments": [
+  {
+   "label": "Deposit to reserve your dates",
+   "pct": 0.3
+  },
+  {
+   "label": "Due the day work starts",
+   "pct": 0.4
+  },
+  {
+   "label": "Balance at final walkthrough",
+   "pct": 0.3
+  }
+ ],
+ "costModel": {
+  "loadedLaborPerHour": 45.12,
+  "laborBillingRate": 87.89,
+  "crewHoursPerDay": 16,
+  "targetMargin": 0.4867,
+  "floorMargin": 0.35
+ },
+ "manager": {
+  "pinSalt": "ph-est-v2:",
+  "pinSha256": "09df9bec41c5d89461400384a7474d5ca985767bcfce17a6bcb4b0cf9d127fbf"
+ },
+ "proposal": {
+  "validDays": 30,
+  "warranty": "5-year workmanship warranty on painting (1 year on decks, fences and other horizontal stained surfaces): if paint we applied peels, blisters or flakes because of our workmanship, we come back and fix it at no charge. Excludes damage, structural movement, moisture from outside sources, and surfaces the customer chose not to prep or prime.",
+  "terms": [
+   "This estimate is valid for 30 days from the date shown.",
+   "Price covers the scope listed. Changes to scope, color changes after work starts, or hidden damage found during prep are quoted in writing before any extra work is done (painter labor $90/hr, carpentry $105/hr).",
+   "Paint and materials are included. Promotional discounts apply to labor only, never to paint or materials.",
+   "Light furniture moving is included. Customer clears small items and valuables from work areas and provides access, power and water.",
+   "Exterior work is scheduled for weather; dates may shift for rain, snow, or temperatures below the coating maker's minimum.",
+   "Homes built before 1978 are handled with EPA RRP lead-safe work practices when the lead-safe line is included. Popcorn ceilings are removed only after a negative asbestos test.",
+   "Payments follow the schedule shown. The balance is due at the final walkthrough once the punch list is complete."
+  ]
+ }
+}
