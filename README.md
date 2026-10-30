@@ -1,2 +1,1 @@
-# www.painterslakewood.com
-www.painterslakewood.com
+Static site.
